@@ -1,17 +1,17 @@
 pipeline {
          agent any
          stages {
-                 stage('One') {
+                 stage('Stage 1- 18061692') {
                  steps {
                      echo 'Stage 1- Completed- 18061692'
                  }
                  }
-                 stage('Two') {
+                 stage('Stage 2- 18061692') {
                  steps {
                     input('Do you want to proceed?')
                  }
                  }
-                 stage('Three') {
+                 stage('Stage 3- 18061692') {
                  when {
                        not {
                             branch "master"
@@ -21,14 +21,14 @@ pipeline {
                        echo "Hello"
                  }
                  }
-                 stage('Four') {
+                 stage('Stage 4- 18061692') {
                  parallel { 
-                            stage('Unit Test') {
+                            stage('Unbuntu Images') {
                            steps {
                                 echo "Running the unit test..."
                            }
                            }
-                            stage('Integration test') {
+                            stage('Stage 5- 18061692') {
                               agent {
                                     docker {
                                             reuseNode true
