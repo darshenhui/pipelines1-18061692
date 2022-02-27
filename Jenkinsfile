@@ -32,7 +32,7 @@ pipeline {
                               agent {
                                     docker {
                                             reuseNode true
-                                            image 'ubuntu'
+                                            image 'apache2-18061692'
                                            }
                                     }
                               steps {
