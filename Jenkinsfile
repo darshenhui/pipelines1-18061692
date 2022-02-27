@@ -36,7 +36,7 @@ pipeline {
                                            }
                                     }
                               steps {
-                                echo "Running the integration test..."
+                                echo "work released- 18061692"
                               }
                            }
                            }
